@@ -1,0 +1,72 @@
+{
+  "primary_color": "e6e6e6",
+  "secondary_color": "ccccff",
+  "hatch_particles": {
+    "type": "minecraft:snow"
+  },
+  "attributes": {
+    "minecraft:generic.armor": 10.0
+  },
+  "abilities": [
+    {
+      "type": "dragonmounts:snow_stepper"
+    },
+    {
+      "type": "dragonmounts:frost_walker",
+      "radius_multiplier": 3.0
+    }
+  ],
+  "habitats": [
+    {
+      "type": "dragonmounts:light",
+      "points": 2,
+      "light": 10,
+      "below": false
+    },
+    {
+      "type": "dragonmounts:world_height",
+      "points": 1,
+      "height": 60,
+      "below": false
+    },
+    {
+      "type": "dragonmounts:picky",
+      "required_habitats": [
+        {
+          "type": "dragonmounts:biome",
+          "points": 1,
+          "biome_tag": "minecraft:is_ice_spike"
+        },
+        {
+          "type": "dragonmounts:nearby_blocks",
+          "point_multiplier": 0.5,
+          "block_tag": "minecraft:ice"
+        },
+        {
+          "type": "dragonmounts:nearby_blocks",
+          "point_multiplier": 0.25,
+          "block_tag": "minecraft:snow"
+        },
+        {
+          "type": "dragonmounts:nearby_blocks",
+          "point_multiplier": 1.0,
+          "block_tag": "minecraft:ice_spike"
+        }
+      ]
+    }
+  ],
+  "immunities": [
+    "minecraft:drown",
+    "minecraft:explosion",
+    "minecraft:freeze",
+    "minecraft:starve",
+    "minecraft:trident",
+    "minecraft:sweet_berry_bush",
+    "minecraft:dragon_breath",
+    "minecraft:magic"
+  ],
+  "ambient_sound": "dragon_mounts_mythic_breeds:entity.dragon.ambient.snowpeak",
+  "death_loot": "minecraft:chests/bastion_treasure",
+  "growth_time": 120,
+  "hatch_chance": 1.0
+}

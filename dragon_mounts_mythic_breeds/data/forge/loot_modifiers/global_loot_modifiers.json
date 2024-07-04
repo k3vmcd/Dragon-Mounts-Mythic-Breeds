@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "entries": [
+    "dragon_mounts_mythic_breeds:egg_chance_by_config.json",
+    "dragon_mounts_mythic_breeds:egg_chance_by_random.json"
+  ]
+}

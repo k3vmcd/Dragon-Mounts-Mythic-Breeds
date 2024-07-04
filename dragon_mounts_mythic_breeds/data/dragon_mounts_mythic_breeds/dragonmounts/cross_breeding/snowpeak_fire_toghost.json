@@ -1,0 +1,5 @@
+{
+  "parent1": "dragon_mounts_mythic_breeds:snowpeak",
+  "parent2": "dragonmounts:fire",
+  "child": "dragonmounts:ghost"
+}
