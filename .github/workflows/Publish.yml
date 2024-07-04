@@ -15,15 +15,18 @@ jobs:
       - name: Publish to CurseForge
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          # Only include this section if you wish to publish
-          # your assets on Modrinth.
-          # modrinth-id: AANobbMI
-          # modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-
+          files: |
+            *.jar
+          
           # Only include this section if you wish to publish
           # your assets on CurseForge.
           curseforge-id: 1057016
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          
+          # Only include this section if you wish to publish
+          # your assets on Modrinth.
+          # modrinth-id: AANobbMI
+          # modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
           # Only include this section if you wish to publish
           # your assets on GitHub.
