@@ -1,0 +1,30 @@
+name: Publish Mod
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        
+      - name: Package mod artifact
+        run: zip -r dragon-mounts-mythic-breeds.jar dragon_mounts_mythic_breeds
+    
+      - name: Publish to CurseForge
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          # Only include this section if you wish to publish
+          # your assets on Modrinth.
+          # modrinth-id: AANobbMI
+          # modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+          # Only include this section if you wish to publish
+          # your assets on CurseForge.
+          curseforge-id: 1057016
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+          # Only include this section if you wish to publish
+          # your assets on GitHub.
+          # github-token: ${{ secrets.GITHUB_TOKEN }}
