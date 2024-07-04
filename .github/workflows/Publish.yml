@@ -17,6 +17,8 @@ jobs:
         with:
           files: |
             *.jar
+          loaders: |
+            forge
           
           # Only include this section if you wish to publish
           # your assets on CurseForge.
